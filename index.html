@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>R&D Body - Official Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <header>
+
+
+  <!-- Header with Logos -->
+  <header>
+    <div class="logos">
+      <img src="images/clg-logo.png" alt="clg-logo" class="logo">
+     <!-- College Banner -->
+<div style="text-align: center; margin: 20px 0;">
+  <img src="images/clg-banner.png" alt="clg-banner" style="width: 100%; max-width: 900px; height: auto;">
+</div>
+      <img src="images/rnd-logo.png" alt="rnd-logo" class="logo">
+    </div>
+    <h2>Our Activities, Events & Achievements</h2>
+  </header>
+
+ <!-- Posters Section -->
+<section>
+  <h2>Posters</h2>
+  <img src="images/poster1.jpg" alt="Poster 1" onclick="openFull(this)" style="width:300px; height:auto; margin:10px; border-radius:10px;">
+  <img src="images/poster2.jpg" alt="Poster 2" onclick="openFull(this)" style="width:300px; height:auto; margin:10px; border-radius:10px;">
+  <img src="images/poster3.jpg" alt="Poster 3" onclick="openFull(this)" style="width:300px; height:auto; margin:10px; border-radius:10px;">
+</section>
+<!-- Fullscreen View -->
+<div id="fullView" style="display:none; 
+position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.9); text-align:center;">
+  <span style="color:white; font-size:30px; cursor:pointer; position:absolute; top:20px; right:40px;" 
+onclick="closeFull()">🥹🥹🥹🥹</span>
+  <img id="fullImg" style="max-width:90%; max-height:90%; margin-top:5%;">
+</div>
+<script>
+  function openFull(img) {
+    document.getElementById("fullView").style.display = "block";
+    document.getElementById("fullImg").src = img.src;
+  }
+  function closeFull() {
+    document.getElementById("fullView").style.display = "none";
+  }
+</script>
+
+   <!-- Activities Section -->
+  <section>
+    <h2>Activities</h2>
+    <div class="gallery-grid">
+      <img src="images/activity1.jpg" alt="Activity 1">
+      <img src="images/activity2.jpg" alt="Activity 2">
+      <img src="images/activity3.jpg" alt="Activity 3">
+    </div>
+  </section>
+
+  <!-- Photos Section -->
+  <section>
+    <h2>Gallery</h2>    <div class="gallery-grid">
+
+      <img src="images/img1.jpg" alt="Event 1">
+      <img src="images/img2.jpg" alt="Event 2">
+      <img src="images/img3.jpg" alt="Event 3">
+      <img src="images/img4.jpg" alt="Event 4">
+    </div>
+  </section>
+<!-- Contact -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>📧: sidhugudipudisidhu@gmail.com</p>
+    <p>📱: +91-7842123376</p>
+  </section>
+
+
+</body>
+</html>
